@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.bsu.cs222.theperfectbet.HelloController">
+   <children>
+      <ChoiceBox fx:id="Sport_cb" layoutX="32.0" layoutY="62.0" prefHeight="26.0" prefWidth="190.0" />
+      <Label fx:id="Choose_lb" layoutX="46.0" layoutY="24.0" prefHeight="28.0" prefWidth="162.0" text="Choose a Sport:">
+         <font>
+            <Font name="Roboto" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="Team1_lb" layoutX="74.0" layoutY="152.0" text="Team One:">
+         <font>
+            <Font name="Roboto" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="Team2_lb" layoutX="72.0" layoutY="268.0" text="Team Two:">
+         <font>
+            <Font name="Roboto" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="Statistics_lb" layoutX="378.0" layoutY="40.0" text="Statistics:">
+         <font>
+            <Font name="Roboto" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="Odds_lb" layoutX="378.0" layoutY="200.0" text="Odds of Winning">
+         <font>
+            <Font name="Roboto" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="Calculate_btn" layoutX="236.0" layoutY="354.0" mnemonicParsing="false" onAction="#onButtonClick" text="Calculate Odds">
+         <font>
+            <Font name="Roboto" size="16.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="refresh_img" fitHeight="26.0" fitWidth="22.0" layoutX="225.0" layoutY="64.0" onMouseClicked="#refreshClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@refresh.png" />
+         </image></ImageView>
+   </children>
+</AnchorPane>
